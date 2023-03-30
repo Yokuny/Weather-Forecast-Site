@@ -1,8 +1,8 @@
-const Weather = () => {
+const _Weather = () => {
   return (
     <>
       <h1>Weather</h1>
     </>
   );
 };
-export default Weather;
+export default _Weather;

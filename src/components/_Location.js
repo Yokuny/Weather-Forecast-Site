@@ -1,4 +1,4 @@
-const Location = () => {
+const _Location = () => {
   return (
     <>
       <form>
@@ -9,4 +9,4 @@ const Location = () => {
     </>
   );
 };
-export default Location;
+export default _Location;
