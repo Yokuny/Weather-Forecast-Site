@@ -1,11 +1,11 @@
 import Aplication from "./_Aplication";
 import AppStyle from "./style/AppStyle.js";
 
-const _App = () => {
+const App = () => {
   return (
     <AppStyle>
       <Aplication />
     </AppStyle>
   );
 };
-export default _App;
+export default App;
