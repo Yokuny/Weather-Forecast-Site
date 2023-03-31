@@ -1,5 +1,7 @@
 import Head from "next/head";
 import App from "../components/App.js";
+import ResetCss from "../components/style/ResetCss.js";
+
 export default function Home() {
   return (
     <>
@@ -10,6 +12,7 @@ export default function Home() {
         <link rel="icon" href="/weather.svg" />
       </Head>
       <main>
+        <ResetCss />
         <App />
       </main>
     </>
