@@ -19,7 +19,7 @@ const Aplication = () => {
   const [city, setCity] = useState(braziliamCity.sort((a, b) => 0.5 - Math.random())[0]);
   return (
     <AplicationStyle>
-      <Weather city={city} setCity={setCity} />
+      <Weather city={city} />
       <Location city={city} setCity={setCity} />
     </AplicationStyle>
   );
