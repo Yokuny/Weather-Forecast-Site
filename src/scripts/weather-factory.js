@@ -2,21 +2,20 @@ const weatherFactory = (item) => {
   const {
     dt_txt: time,
     main: { temp, feels_like: feelsLike, humidity },
-    weather,
+    weather: [{ description, icon }],
     clouds: { all: cloudiness },
-    wind: { speed, gust },
+    wind: { speed },
   } = item;
-
-  const weatherDescription = weather.length > 0 ? weather[0].description : "";
-
+  const celsius = (parseFloat(temp) - 273.15).toFixed(1);
+  const feltCelsius = (parseFloat(feelsLike) - 273.15).toFixed(1);
   return {
     time,
-    temp,
-    feelsLike,
-    weather: weatherDescription,
+    description,
+    icon,
+    celsius,
+    feltCelsius,
     cloudiness,
     windSpeed: speed,
-    windGust: gust,
     humidity,
   };
 };

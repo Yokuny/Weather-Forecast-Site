@@ -4,12 +4,9 @@ import Aplication from "./_Aplication";
 import AppStyle from "./style/AppStyle";
 import BackgroudPicture from "./style/BackgroudPicture.js";
 
-import cloud from "../../public/cloud.jpg";
-import rain from "../../public/rain.jpg";
-import sun from "../../public/sun.jpg";
-const img = [cloud, rain, sun];
+const img = ["/cloud.jpg", "/rain.jpg", "/sun.jpg"];
 const App = () => {
-  const [weatherPicture, setWeatherPicture] = useState(1);
+  const [weatherPicture, setWeatherPicture] = useState(2);
   return (
     <AppStyle>
       <Aplication />
