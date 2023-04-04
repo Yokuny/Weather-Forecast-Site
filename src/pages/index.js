@@ -1,6 +1,7 @@
 import Head from "next/head";
 import App from "../components/App.js";
 import ResetCss from "../components/style/ResetCss.js";
+import { UserProvider } from "../scripts/context";
 
 export default function Home() {
   return (
@@ -13,7 +14,9 @@ export default function Home() {
       </Head>
       <main>
         <ResetCss />
-        <App />
+        <UserProvider>
+          <App />
+        </UserProvider>
       </main>
     </>
   );
