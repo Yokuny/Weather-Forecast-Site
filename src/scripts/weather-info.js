@@ -1,7 +1,8 @@
+const apiKey = process.env.API_KEY;
 const weather_info = async (lat, lon) => {
   try {
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=1f2ae6467f3e31e3d1030a01b685c66f`
+      `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`
     );
     const data = await response.json();
     return data;
