@@ -9,7 +9,7 @@ const App = () => {
   const [weatherPicture, setWeatherPicture] = useState(2);
   return (
     <AppStyle>
-      <Aplication />
+      <Aplication background={setWeatherPicture} />
       <BackgroudPicture>
         <Image
           src={img[weatherPicture]}

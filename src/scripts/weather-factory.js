@@ -1,3 +1,4 @@
+import { format } from "date-fns";
 const weatherFactory = (item) => {
   const {
     dt_txt: time,
@@ -8,8 +9,9 @@ const weatherFactory = (item) => {
   } = item;
   const celsius = (parseFloat(temp) - 273.15).toFixed(1);
   const feltCelsius = (parseFloat(feelsLike) - 273.15).toFixed(1);
+  const formattedTime = format(new Date(time), "dd - h a");
   return {
-    time,
+    time: formattedTime,
     description,
     icon,
     celsius,
