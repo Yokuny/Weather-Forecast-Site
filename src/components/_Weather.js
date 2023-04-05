@@ -6,19 +6,16 @@ import weatherInfo from "@/scripts/weather-info";
 import weatherFactory from "@/scripts/weather-factory";
 import TodayWeather from "@/scripts/today-weather";
 import { WeatherStyle, WeatherCard, Celsius, WeatherInfo } from "./style/WeatherStyle";
-
 const _Weather = ({ city }) => {
   const { setBackground } = useContext(UserContext);
   const [weather, setWeather] = useState([]);
   const [cityName, setCityName] = useState(city);
-
   useEffect(() => {
     if (weather[0]) {
       let img = TodayWeather(weather[0].description.toLowerCase());
       setBackground(img);
     }
   }, [weather, setBackground]);
-
   useEffect(() => {
     const location = latLonRequest(city);
     location.then((data) => {

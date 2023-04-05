@@ -13,6 +13,11 @@ export const WeatherStyle = styled.div`
   section {
     display: flex;
   }
+  @media (max-width: 1100px) {
+    section {
+      flex-direction: column;
+    }
+  }
 `;
 export const WeatherCard = styled.div`
   display: flex;
@@ -33,6 +38,9 @@ export const WeatherCard = styled.div`
     top: -10px;
     width: 100px;
     height: 100px;
+  }
+  & @media (max-width: 1100px) {
+    overflow: scroll;
   }
 `;
 export const Celsius = styled.div`
