@@ -1,9 +1,6 @@
-require("dotenv").config();
-const apiKey = process.env.API_KEY;
 const lat_lon = async (location) => {
-  console.log(process.env.API_KEY);
-  console.log(">>>>");
-
+  const apiKey = process.env.NEXT_PUBLIC_API_KEY || process.env.API_KEY;
+  console.log(apiKey);
   try {
     const response = await fetch(
       `https://api.openweathermap.org/geo/1.0/direct?q=${location},BR&limit=2&appid=${apiKey}`

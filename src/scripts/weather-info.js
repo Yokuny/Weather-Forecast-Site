@@ -1,7 +1,6 @@
-const apiKey = process.env.API_KEY;
 const weather_info = async (lat, lon) => {
-  console.log(process.env.API_KEY);
-  console.log(">>>>");
+  const apiKey = process.env.NEXT_PUBLIC_API_KEY || process.env.API_KEY;
+  console.log(apiKey);
   try {
     const response = await fetch(
       `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`
