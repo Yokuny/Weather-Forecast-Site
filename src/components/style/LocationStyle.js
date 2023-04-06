@@ -1,9 +1,9 @@
 import styled from "styled-components";
 const LocationStyle = styled.form`
-  border: 1px solid #000;
   display: flex;
   align-items: flex-end;
   padding: 1rem;
+  border: 1px solid #000;
   border-radius: 0.2rem;
   background-color: #fff;
   margin-top: 1rem;

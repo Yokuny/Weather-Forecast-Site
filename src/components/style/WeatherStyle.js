@@ -1,10 +1,9 @@
 import styled from "styled-components";
 export const WeatherStyle = styled.div`
-  margin-top: 100px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1.2rem;
   border: 1px solid #000;
   border-radius: 0.2rem;
   background-color: #fff;
