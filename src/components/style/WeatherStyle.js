@@ -1,5 +1,6 @@
 import styled from "styled-components";
 export const WeatherStyle = styled.div`
+  margin-top: 100px;
   display: flex;
   align-items: center;
   flex-direction: column;
