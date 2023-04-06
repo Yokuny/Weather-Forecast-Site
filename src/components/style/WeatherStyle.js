@@ -40,7 +40,7 @@ export const WeatherCard = styled.div`
     width: 100px;
     height: 100px;
   }
-  & @media (max-width: 1100px) {
+  @media (max-width: 1100px) {
     overflow: scroll;
   }
 `;
